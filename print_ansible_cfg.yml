@@ -4,4 +4,4 @@
   tasks:
     - name: print etc/ansible.cfg
       ansible.builtin.debug:
-            msg: "the value of foo.txt is {{lookup('ansible.builtin.file', '/etc/ansible.cfg') }}"
+            msg: "{{lookup('ansible.builtin.file', '/etc/ansible/ansible.cfg') }}"
