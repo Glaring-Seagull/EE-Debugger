@@ -1,6 +1,6 @@
 ---
 - name: Check etc/ansible.cfg
-  hosts: all
+  hosts: localhost
   tasks:
     - name: print etc/ansible.cfg
       ansible.builtin.debug:
